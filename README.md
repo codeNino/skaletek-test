@@ -18,7 +18,7 @@ Clone this repository to your local machine:
 
 ```bash
 git clone <https://github.com/codeNino/skaletek-test>
-cd <repository-directory>
+cd <skaletek-test>
 ```
 
 
@@ -43,6 +43,20 @@ Use Docker Compose to build and run the Docker container in background:
 
 ```bash
 docker compose up -d --build skaletek-srv
+```
+
+#### You can set an env file for your docker container to work with
+
+##### create a .env file
+ 
+ add an api key value to protect your service against aunthorized requests;
+
+ API_KEY = "XXXXXX-XXXX"
+
+Run container with:
+
+```bash
+docker compose --env-file .env up -d
 ```
 
 
